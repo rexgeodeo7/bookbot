@@ -19,7 +19,10 @@ def main():
     print("----------- Word Count ----------")
     print(f"Found {words} total words")
     print("--------- Character Count -------")
-    print(sorted_dict)
+    
+    for item in sorted_dict:
+        print(f"{item['char']}: {item['num']}")
+
     print("============= END ===============")
 
 def get_book_text(path):
